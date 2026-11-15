@@ -34,6 +34,135 @@
             <label for="correu">Correu electrònic*</label>
             <input type="email" id="correu" name="correu" placeholder="exemple@correu.com" required>
         </div>
+        <div class="fila">
+          <div class="camp">
+            <label for="telefon">Telèfon</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="600 000 000">
+          </div>
+          <div class="camp">
+            <label for="naixement">Data de naixement *</label>
+            <input type="date" id="naixement" name="naixement" required>
+          </div>
+        </div>
+            <div class="camp">
+          <label for="contrasenya">Contrasenya *</label>
+          <input type="password" id="contrasenya" name="contrasenya" placeholder="Introdueix una contrasenya" required>
+        </div>
+      </fieldset>
+
+      <!-- 2. INFORMACIÓ ACADÈMICA -->
+      <fieldset>
+        <legend>2. Informació acadèmica</legend>
+
+        <div class="camp">
+          <label for="curs">Curs actual *</label>
+          <select id="curs" name="curs" required>
+            <option value="" selected disabled>Selecciona un curs</option>
+            <option value="1eso">1r ESO</option>
+            <option value="2eso">2n ESO</option>
+            <option value="3eso">3r ESO</option>
+            <option value="4eso">4t ESO</option>
+            <option value="1bat">1r Batxillerat</option>
+            <option value="2bat">2n Batxillerat</option>
+          </select>
+        </div>
+
+        <div class="camp">
+          <span class="titol-grup" id="titol-activitat">Activitat que vols realitzar *</span>
+          <div class="opcions" role="radiogroup" aria-labelledby="titol-activitat">
+            <div class="opcio">
+              <input type="radio" id="act-programacio" name="activitat" value="programacio" required>
+              <label for="act-programacio">Programació</label>
+            </div>
+            <div class="opcio">
+              <input type="radio" id="act-robotica" name="activitat" value="robotica">
+              <label for="act-robotica">Robòtica</label>
+            </div>
+            <div class="opcio">
+              <input type="radio" id="act-disseny" name="activitat" value="disseny-web">
+              <label for="act-disseny">Disseny web</label>
+            </div>
+            <div class="opcio">
+              <input type="radio" id="act-esports" name="activitat" value="esports">
+              <label for="act-esports">Esports</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="camp">
+          <span class="titol-grup" id="titol-dies">Dies disponibles</span>
+          <div class="opcions" role="group" aria-labelledby="titol-dies">
+            <div class="opcio">
+              <input type="checkbox" id="dia-dilluns" name="dies" value="dilluns">
+              <label for="dia-dilluns">Dilluns</label>
+            </div>
+            <div class="opcio">
+              <input type="checkbox" id="dia-dimarts" name="dies" value="dimarts">
+              <label for="dia-dimarts">Dimarts</label>
+            </div>
+            <div class="opcio">
+              <input type="checkbox" id="dia-dimecres" name="dies" value="dimecres">
+              <label for="dia-dimecres">Dimecres</label>
+            </div>
+            <div class="opcio">
+              <input type="checkbox" id="dia-dijous" name="dies" value="dijous">
+              <label for="dia-dijous">Dijous</label>
+            </div>
+            <div class="opcio">
+              <input type="checkbox" id="dia-divendres" name="dies" value="divendres">
+              <label for="dia-divendres">Divendres</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- 3. INFORMACIÓ ADDICIONAL -->
+      <fieldset>
+        <legend>3. Informació addicional</legend>
+
+        <div class="camp">
+          <label for="color">Color preferit per a la teva identificació</label>
+          <input type="color" id="color" name="color" value="#4285db">
+        </div>
+
+        <div class="camp">
+          <label for="nivell">Nivell d'experiència (de 0 a 10)</label>
+          <input type="range" id="nivell" name="nivell" min="0" max="10" step="1" value="5">
+          <div class="escala" aria-hidden="true">
+            <span>0</span>
+            <span>5</span>
+            <span>10</span>
+          </div>
+        </div>
+
+        <div class="camp">
+          <label for="comentaris">Comentaris o observacions</label>
+          <textarea id="comentaris" name="comentaris" rows="4" placeholder="Escriu aquí els teus comentaris..."></textarea>
+        </div>
+
+        <div class="camp">
+          <label for="document">Adjunta un document (opcional)</label>
+          <div class="fitxer">
+            <input type="file" id="document" name="document">
+            <p>Camp HTML de tipus file</p>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="opcio condicions">
+        <input type="checkbox" id="condicions" name="condicions" value="acceptat" required>
+        <label for="condicions">Accepto la política de privacitat i les condicions d'inscripció. *</label>
+      </div>
+
+      <div class="botons">
+        <button type="submit" class="boto-enviar">Enviar inscripció</button>
+        <button type="reset" class="boto-netejar">Netejar</button>
+      </div>
+
+      <p class="nota">* Camps obligatoris</p>
+    </form>
+
+    <p class="peu">Model visual de referència. No cal que els botons enviïn informació ni que el formulari tingui connexió amb un servidor.</p>
     </form>
     </main>
 </body>
