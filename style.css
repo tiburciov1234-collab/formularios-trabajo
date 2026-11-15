@@ -10,3 +10,278 @@ body {
   color: #111111;
   background-color: #ffffff;
 }
+
+.pagina {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* ---------- Formulari ---------- */
+.formulari {
+  padding: 12px;
+  background-color: #fcfcfc;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+}
+
+.capcalera {
+  margin-bottom: 12px;
+  padding: 16px;
+  text-align: center;
+  background-color: #e6ecf7;
+  border-radius: 14px;
+}
+
+.capcalera h1 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.capcalera p {
+  margin: 0;
+  font-size: 13px;
+  color: #555555;
+}
+
+/* ---------- Fieldset i legend ---------- */
+fieldset {
+  min-width: 0;
+  margin: 0 0 12px;
+  padding: 12px;
+  background-color: #fdfdfd;
+  border: 1px solid #dddddd;
+  border-radius: 14px;
+}
+
+legend {
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  float: left;          /* manté el títol dins de la targeta, com al model */
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+legend + * {
+  clear: both;
+}
+
+/* ---------- Camps ---------- */
+.fila {
+  display: flex;
+  gap: 12px;
+}
+
+.fila .camp {
+  flex: 1;
+  min-width: 0;
+}
+
+.camp {
+  margin-bottom: 10px;
+}
+
+label,
+.titol-grup {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select,
+input[type="color"] {
+  width: 100%;
+  height: 40px;
+  padding: 0 18px;
+  font-family: inherit;
+  font-size: 15px;
+  color: #111111;
+  background-color: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 20px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999999;
+}
+
+input[type="color"] {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+select {
+  font-size: 13px;
+  color: #666666;
+}
+
+select:valid {
+  color: #111111;
+}
+
+/* ---------- Radio i checkbox rodons ---------- */
+.opcions {
+  display: flex;
+  flex-direction: column;
+}
+
+.opcio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.opcio label {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #111111;
+  cursor: pointer;
+}
+
+.opcio input[type="radio"],
+.opcio input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.opcio input[type="radio"]:checked,
+.opcio input[type="checkbox"]:checked {
+  background-color: #111111;
+  border-color: #111111;
+  box-shadow: inset 0 0 0 4px #ffffff;
+}
+
+.condicions {
+  margin: 16px 12px 12px;
+}
+
+/* ---------- Rang ---------- */
+input[type="range"] {
+  width: 100%;
+  height: 24px;
+  margin: 4px 0;
+  cursor: pointer;
+  accent-color: #111111;
+}
+
+.escala {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #111111;
+}
+
+/* ---------- Textarea ---------- */
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 80px;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 15px;
+  color: #111111;
+  background-color: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  resize: vertical;
+}
+
+/* ---------- Fitxer ---------- */
+.fitxer {
+  padding: 14px;
+  background-color: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+}
+
+.fitxer input[type="file"] {
+  font-family: inherit;
+  font-size: 13px;
+  color: #333333;
+}
+
+.fitxer p {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #555555;
+}
+
+/* ---------- Botons ---------- */
+.botons {
+  display: flex;
+  gap: 10px;
+  margin: 0 12px;
+}
+
+button {
+  height: 38px;
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.boto-enviar {
+  flex: 1;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #111111;
+  border: 1px solid #111111;
+}
+
+.boto-netejar {
+  padding: 0 18px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.boto-enviar:hover {
+  background-color: #333333;
+}
+
+.boto-netejar:hover {
+  background-color: #f2f2f2;
+}
+
+/* ---------- Textos finals ---------- */
+.nota {
+  margin: 14px 0 6px;
+  font-size: 13px;
+  color: #555555;
+  text-align: center;
+}
+
+.peu {
+  margin: 16px 0 0;
+  font-size: 14px;
+  color: #555555;
+}
+
+/* ---------- Mòbil ---------- */
+@media (max-width: 560px) {
+  .fila {
+    flex-direction: column;
+    gap: 0;
+  }
+}
